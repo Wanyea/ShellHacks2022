@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PathCreation;
+//using PathCreation;
 
-[RequireComponent(typeof(PathCreator))]
+//[RequireComponent(typeof(PathCreator))]
 public class PathfinderScript : MonoBehaviour
 {
 
@@ -137,6 +137,6 @@ public class PathfinderScript : MonoBehaviour
     }
 
     void GenerateBezierPath() {
-          BezierPath bezierPath = new BezierPath(pathfinderPosition, closedLoop,  PathSpace.xyz);
+          //BezierPath bezierPath = new BezierPath(pathfinderPosition, closedLoop,  PathSpace.xyz);
         }
 }
