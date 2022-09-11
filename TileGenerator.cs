@@ -24,7 +24,7 @@ public class TileGenerator : MonoBehaviour
         // xSize = tileWidth; 
         tileDepth = (int)tileSize.z;
         // zSize = tileDepth;
-        Vector3 pos = new Vector3(0, 0, 0);
+        Vector3 pos = new Vector3(0-(size*tileWidth/2), 0, 0-(size*tileDepth/2));
         for (int i=0; i<size; i++){
             for (int j=0; j<size; j++){
                 Instantiate(tileT, pos, Quaternion.identity);
@@ -36,7 +36,7 @@ public class TileGenerator : MonoBehaviour
                 pos.x += tileWidth; 
 
             }
-            pos.x = 0; 
+            pos.x = 0-(size*tileWidth/2); 
             pos.z += tileDepth; 
             
         }
